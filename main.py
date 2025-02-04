@@ -1,16 +1,21 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+print("welcome to the treasure hunt")
+choice1 = input("left or right?")
+if choice1 == "left":
+    print("game over")
+elif choice1 == "right":
+    choice2 = input("you found a boat, should you use it or swim on your own?")
+    if choice2 == "swim":
+        print("game over")
+    elif choice2 == "boat":
+        choice3 = input("you passed safely and you found 3 doors, each with a different color. the first door is blue, "
+                        "the second is green and the thirs is yellow. which do you choose?")
+        if choice3 == "blue":
+            print("you win")
+        else:
+            print("game over")
+    else:
+        print("game over")
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+else:
+    print("game over")
